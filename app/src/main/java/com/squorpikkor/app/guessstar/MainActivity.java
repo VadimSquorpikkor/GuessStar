@@ -137,12 +137,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void generateQuestion() {
-        numberOfQuestion = (int) Math.random() * names.size();
-        numberOfRightAnswer = (int) Math.random() * buttons.size();
+        numberOfQuestion = (int) (Math.random() * names.size());
+        numberOfRightAnswer = (int) (Math.random() * buttons.size());
     }
 
     private int generateWrongQuestion() {
-        return (int)Math.random()*names.size();
+        return (int)(Math.random()*names.size());
     }
 
     private static class DownloadContentTask extends AsyncTask<String, Void, String> {
